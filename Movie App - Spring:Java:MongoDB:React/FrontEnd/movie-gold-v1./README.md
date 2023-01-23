@@ -1,0 +1,1 @@
+Movie carousel APP - using React, Java, Spring(dependencies maven and lombok) and MongoDB, tested with Postman.
