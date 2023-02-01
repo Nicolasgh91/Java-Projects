@@ -1,15 +1,24 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TestExample {
-    int a = 10;
-    int b = -5;
-    int c = 0;
+    int a;
+    int b;
+    int c;
 
     Example ex = new Example();
     Example ex2 = new Example();
+
+    @Before
+    public void beforeEachTest(){
+        a = 10;
+        b = -5;
+        c = 0;
+    }
+
     @Test
     public void testIsPositive() {
         // Equal to 1 means it it looking for a match on the previous method
